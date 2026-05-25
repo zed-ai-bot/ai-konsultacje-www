@@ -500,15 +500,23 @@
             font-size: 0.9rem;
         }
 
+        .h1-break {
+            display: inline;
+        }
+
         @media (max-width: 768px) {
             header {
                 padding: 60px 20px;
             }
 
             h1 {
-                font-size: clamp(1.1rem, 6.5vw, 2rem);
-                letter-spacing: 1px;
+                font-size: clamp(1rem, 5.5vw, 2rem);
+                letter-spacing: 0px;
                 word-break: break-word;
+            }
+
+            .h1-break {
+                display: block;
             }
 
             .tagline {
@@ -537,7 +545,7 @@
     <header>
         <div class="container">
             <img src="logo.svg" alt="ai.codepit.pl" style="height: clamp(4rem, 10vw, 7rem); width: auto; margin: 0 auto 30px auto; display: block;">
-            <h1>Konsultacje AI<br>& Automatyzacja Procesów</h1>
+            <h1>Konsultacje AI<br>& Automatyzacja<span class="h1-break"> </span>Procesów</h1>
             <p class="tagline">Dla małych i średnich przedsiębiorstw</p>
             <p class="subtitle">
                 Automatyzujemy powtarzalne procesy w Twojej firmie,<br>
